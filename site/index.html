@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MH + Central Govt Jobs</title>
+<style>
+  :root{
+    --bg:#0f172a; --card:#1e293b; --accent:#22c55e; --accent2:#3b82f6;
+    --text:#e2e8f0; --muted:#94a3b8; --border:#334155;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; font-family:-apple-system,Segoe UI,Roboto,sans-serif;
+    background:var(--bg); color:var(--text);
+  }
+  header{
+    padding:20px 16px; text-align:center; border-bottom:1px solid var(--border);
+    position:sticky; top:0; background:var(--bg); z-index:10;
+  }
+  header h1{margin:0 0 4px; font-size:1.4rem;}
+  header p{margin:0; color:var(--muted); font-size:.85rem;}
+  .controls{
+    display:flex; gap:8px; flex-wrap:wrap; padding:14px 16px; max-width:900px; margin:0 auto;
+  }
+  .controls input, .controls select{
+    flex:1; min-width:140px; padding:10px 12px; border-radius:8px;
+    border:1px solid var(--border); background:var(--card); color:var(--text); font-size:.9rem;
+  }
+  #jobList{max-width:900px; margin:0 auto; padding:0 16px 40px;}
+  .job-card{
+    background:var(--card); border:1px solid var(--border); border-radius:12px;
+    padding:16px; margin-bottom:12px;
+  }
+  .job-card h3{margin:0 0 8px; font-size:1.05rem; line-height:1.3;}
+  .tag{
+    display:inline-block; font-size:.7rem; padding:2px 8px; border-radius:20px;
+    background:rgba(59,130,246,.15); color:var(--accent2); margin-right:6px; margin-bottom:6px;
+  }
+  .tag.mh{background:rgba(34,197,94,.15); color:var(--accent);}
+  .meta{display:grid; grid-template-columns:1fr 1fr; gap:6px 16px; font-size:.85rem; color:var(--muted); margin:10px 0;}
+  .meta b{color:var(--text); font-weight:500;}
+  .links{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px;}
+  .links a{
+    font-size:.8rem; padding:7px 12px; border-radius:8px; text-decoration:none;
+    border:1px solid var(--border); color:var(--text);
+  }
+  .links a.primary{background:var(--accent); color:#052e16; border:none; font-weight:600;}
+  .empty, .loading{text-align:center; color:var(--muted); padding:40px 16px;}
+  .synced{text-align:center; font-size:.75rem; color:var(--muted); padding-bottom:10px;}
+  @media(max-width:480px){.meta{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🏛️ MH + Central Govt Jobs</h1>
+  <p>Sirf Maharashtra aur Central Govt jobs — auto-synced</p>
+</header>
+
+<div class="controls">
+  <input type="text" id="searchBox" placeholder="Job title / dept search karein...">
+  <select id="stateFilter">
+    <option value="">Sabhi (MH + Central)</option>
+    <option value="Maharashtra">Maharashtra hi</option>
+    <option value="Central">Central hi</option>
+  </select>
+  <select id="categoryFilter">
+    <option value="">Sabhi Categories</option>
+  </select>
+</div>
+
+<div class="synced" id="syncedInfo"></div>
+<div id="jobList" class="loading">Loading jobs...</div>
+
+<script>
+let ALL_JOBS = [];
+
+async function loadJobs(){
+  try{
+    const res = await fetch('jobs.json?t=' + Date.now());
+    const data = await res.json();
+    ALL_JOBS = data.jobs || [];
+    document.getElementById('syncedInfo').textContent =
+      data.last_synced ? `Last synced: ${new Date(data.last_synced).toLocaleString('en-IN')} · ${data.total_jobs} jobs` : '';
+    populateCategoryFilter();
+    render();
+  }catch(e){
+    document.getElementById('jobList').innerHTML = '<div class="empty">jobs.json nahi mila. Pehle scraper chalayein.</div>';
+  }
+}
+
+function populateCategoryFilter(){
+  const cats = [...new Set(ALL_JOBS.map(j => j.category).filter(Boolean))].sort();
+  const sel = document.getElementById('categoryFilter');
+  cats.forEach(c => {
+    const opt = document.createElement('option');
+    opt.value = c; opt.textContent = c;
+    sel.appendChild(opt);
+  });
+}
+
+function render(){
+  const q = document.getElementById('searchBox').value.toLowerCase();
+  const state = document.getElementById('stateFilter').value;
+  const cat = document.getElementById('categoryFilter').value;
+
+  const filtered = ALL_JOBS.filter(j => {
+    const matchesQ = !q || (j.job_title + ' ' + j.department).toLowerCase().includes(q);
+    const matchesState = !state || j.state_tag === state;
+    const matchesCat = !cat || j.category === cat;
+    return matchesQ && matchesState && matchesCat;
+  });
+
+  const list = document.getElementById('jobList');
+  if(filtered.length === 0){
+    list.innerHTML = '<div class="empty">Koi job nahi mili.</div>';
+    return;
+  }
+
+  list.innerHTML = filtered.map(j => `
+    <div class="job-card">
+      <span class="tag ${j.state_tag === 'Maharashtra' ? 'mh' : ''}">${j.state_tag}</span>
+      <span class="tag">${j.category || 'General'}</span>
+      <h3>${escapeHtml(j.job_title)}</h3>
+      <div class="meta">
+        <div><b>Dept:</b> ${escapeHtml(j.department) || '—'}</div>
+        <div><b>Post:</b> ${escapeHtml(j.post) || '—'}</div>
+        <div><b>Qualification:</b> ${escapeHtml(j.qualification) || '—'}</div>
+        <div><b>Location:</b> ${escapeHtml(j.location) || '—'}</div>
+        <div><b>Last Date:</b> ${escapeHtml(j.last_date) || '—'}</div>
+      </div>
+      <div class="links">
+        ${j.apply_link ? `<a class="primary" href="${j.apply_link}" target="_blank" rel="noopener">Apply Link</a>` : ''}
+        ${j.pdf_link ? `<a href="${j.pdf_link}" target="_blank" rel="noopener">PDF</a>` : ''}
+        ${j.official_website ? `<a href="${j.official_website}" target="_blank" rel="noopener">Official Website</a>` : ''}
+      </div>
+    </div>
+  `).join('');
+}
+
+function escapeHtml(str){
+  if(!str) return '';
+  return String(str).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+
+document.getElementById('searchBox').addEventListener('input', render);
+document.getElementById('stateFilter').addEventListener('change', render);
+document.getElementById('categoryFilter').addEventListener('change', render);
+
+loadJobs();
+</script>
+
+</body>
+</html>
