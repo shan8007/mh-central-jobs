@@ -1,0 +1,39 @@
+name: Sync Jobs (Maharashtra + Central)
+
+on:
+  schedule:
+    # Din me 3 baar chalega (UTC time - IST se 5:30 ghante peeche)
+    # 08:00, 14:00, 20:00 IST
+    - cron: "30 2 * * *"
+    - cron: "30 8 * * *"
+    - cron: "30 14 * * *"
+  workflow_dispatch: {}   # manually bhi "Run workflow" button se chala sakte ho
+
+permissions:
+  contents: write
+
+jobs:
+  scrape-and-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repo checkout
+        uses: actions/checkout@v4
+
+      - name: Python setup
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Dependencies install
+        run: pip install -r scraper/requirements.txt
+
+      - name: Scraper chalao
+        run: python scraper/scrape.py
+
+      - name: Naye data ko commit + push karo
+        run: |
+          git config user.name "auto-sync-bot"
+          git config user.email "actions@github.com"
+          git add site/jobs.json
+          git diff --quiet --cached || git commit -m "Auto sync: jobs updated $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
