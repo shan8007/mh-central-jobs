@@ -25,6 +25,7 @@ from datetime import datetime, timezone
 
 import requests
 from bs4 import BeautifulSoup
+from urllib.parse import urljoin
 
 BASE = "https://www.freejobalert.com"
 
@@ -117,9 +118,10 @@ def parse_job_page(url, source_state):
                 val_cell = cells[1]
                 val_text = val_cell.get_text(" ", strip=True)
                 val_link = val_cell.find("a")
+                raw_href = val_link.get("href") if val_link else None
                 overview[key] = {
                     "text": val_text,
-                    "link": val_link.get("href") if val_link else None,
+                    "link": urljoin(url, raw_href) if raw_href else None,
                 }
 
     def get_field(*keys):
@@ -141,15 +143,25 @@ def parse_job_page(url, source_state):
     # Important Links section -> Apply Online + Notification PDF
     apply_link = ""
     pdf_link = ""
+    APPLY_KEYWORDS = [
+        "apply online", "apply here", "apply link", "apply now",
+        "online registration", "registration link", "click here to apply",
+        "online application",
+    ]
+    PDF_KEYWORDS = [
+        "notification pdf", "official notification", "download notification",
+        "notification link", "advertisement pdf", "detailed notification",
+    ]
     for li_or_p in soup.find_all(["li", "p"]):
         text = li_or_p.get_text(" ", strip=True).lower()
         a = li_or_p.find("a")
         if not a or not a.get("href"):
             continue
-        href = a.get("href")
-        if "apply online" in text or "apply here" in text:
+        # har href ko yahin absolute bana do (relative path wala bug fix)
+        href = urljoin(url, a.get("href"))
+        if not apply_link and any(k in text for k in APPLY_KEYWORDS):
             apply_link = href
-        elif "notification pdf" in text or "official notification" in text or href.lower().endswith(".pdf"):
+        elif not pdf_link and (any(k in text for k in PDF_KEYWORDS) or href.lower().endswith(".pdf")):
             pdf_link = href
         elif "official website" in text and not official_website:
             official_website = href
@@ -157,8 +169,13 @@ def parse_job_page(url, source_state):
     # Fallback: kisi bhi .pdf link ko PDF maan lo agar upar nahi mila
     if not pdf_link:
         pdf_a = soup.find("a", href=re.compile(r"\.pdf($|\?)", re.I))
-        if pdf_a:
-            pdf_link = pdf_a.get("href")
+        if pdf_a and pdf_a.get("href"):
+            pdf_link = urljoin(url, pdf_a.get("href"))
+
+    # Fallback: apply_link kabhi na mile to official_website hi de do,
+    # taaki "Apply" button kabhi bhi khaali/broken na jaaye
+    if not apply_link:
+        apply_link = official_website
 
     if not last_date:
         # Important Dates table alag format me ho sakta hai
