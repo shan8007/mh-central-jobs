@@ -131,12 +131,19 @@ function render(){
         <div><b>Last Date:</b> ${escapeHtml(j.last_date) || '—'}</div>
       </div>
       <div class="links">
-        ${j.apply_link ? `<a class="primary" href="${j.apply_link}" target="_blank" rel="noopener">Apply Link</a>` : ''}
-        ${j.pdf_link ? `<a href="${j.pdf_link}" target="_blank" rel="noopener">PDF</a>` : ''}
-        ${j.official_website ? `<a href="${j.official_website}" target="_blank" rel="noopener">Official Website</a>` : ''}
+        ${isValidUrl(j.apply_link) ? `<a class="primary" href="${j.apply_link}" target="_blank" rel="noopener">Apply Link</a>` : ''}
+        ${isValidUrl(j.pdf_link) ? `<a href="${j.pdf_link}" target="_blank" rel="noopener">PDF</a>` : ''}
+        ${isValidUrl(j.official_website) ? `<a href="${j.official_website}" target="_blank" rel="noopener">Official Website</a>` : ''}
       </div>
     </div>
   `).join('');
+}
+
+function isValidUrl(str){
+  // Sirf full http(s) links ko valid maano - relative/broken links button me kabhi na dikhein
+  if(!str) return false;
+  try{ const u = new URL(str); return u.protocol === 'http:' || u.protocol === 'https:'; }
+  catch(e){ return false; }
 }
 
 function escapeHtml(str){
