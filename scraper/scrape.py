@@ -131,19 +131,24 @@ def parse_job_page(url, source_state):
                     return ov
         return {"text": "", "link": None}
 
+    # Ye domains kabhi bhi Apply/PDF/Official Website link nahi ban sakte -
+    # inpar hamesha wapas freejobalert ya apni khud ki site khulti hai,
+    # asli sarkari application portal nahi
+    BLOCKED_DOMAINS = ("freejobalert.com", "shan8007.github.io")
+
     def is_usable_link(href):
-        """Fragment-only (#...) ya isi article page par wapas jaane wale
-        links ko kabhi bhi 'real' apply/pdf/official link mat maano -
-        yahi wo bug tha jiski wajah se Apply Now click karne par
-        wapas usi job page par pahunch jaate the."""
+        """Fragment-only (#...), isi article page par wapas jaane wale, ya
+        freejobalert/apni site ke kisi bhi page par jaane wale links ko
+        kabhi bhi 'real' apply/pdf/official link mat maano - yahi wo bug
+        tha jiski wajah se Apply Now click karne par wapas job page par
+        (ya kisi aur freejobalert page par) pahunch jaate the."""
         if not href:
             return False
         href = href.strip()
         if href.startswith("#") or href.lower().startswith("javascript:"):
             return False
         absolute = urljoin(url, href)
-        # agar link (fragment hata kar) khud article page jaisa hi hai, to reject
-        if absolute.split("#")[0].rstrip("/") == url.split("#")[0].rstrip("/"):
+        if any(d in absolute.lower() for d in BLOCKED_DOMAINS):
             return False
         return True
 
@@ -156,6 +161,8 @@ def parse_job_page(url, source_state):
 
     official_site = get_field("official website")
     official_website = official_site.get("link") or ""
+    if not is_usable_link(official_website):
+        official_website = ""
 
     apply_link = ""
     pdf_link = ""
