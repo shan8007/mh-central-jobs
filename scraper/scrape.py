@@ -131,18 +131,51 @@ def parse_job_page(url, source_state):
                     return ov
         return {"text": "", "link": None}
 
+    def is_usable_link(href):
+        """Fragment-only (#...) ya isi article page par wapas jaane wale
+        links ko kabhi bhi 'real' apply/pdf/official link mat maano -
+        yahi wo bug tha jiski wajah se Apply Now click karne par
+        wapas usi job page par pahunch jaate the."""
+        if not href:
+            return False
+        href = href.strip()
+        if href.startswith("#") or href.lower().startswith("javascript:"):
+            return False
+        absolute = urljoin(url, href)
+        # agar link (fragment hata kar) khud article page jaisa hi hai, to reject
+        if absolute.split("#")[0].rstrip("/") == url.split("#")[0].rstrip("/"):
+            return False
+        return True
+
     dept = get_field("recruiting body", "organisation", "organization", "department").get("text", "")
     quali = get_field("qualification", "eligibility").get("text", "")
     last_date_field = get_field("closing date", "last date")
     last_date = last_date_field.get("text", "")
     post = get_field("post name", "post").get("text", "")
     location = get_field("job location", "location").get("text", "") or source_state
-    official_site = get_field("official website")
-    official_website = official_site.get("link") or official_site.get("text", "")
 
-    # Important Links section -> Apply Online + Notification PDF
+    official_site = get_field("official website")
+    official_website = official_site.get("link") or ""
+
     apply_link = ""
     pdf_link = ""
+
+    # STEP 1 (sabse bharosemand): "Important Links" table row se seedha
+    # uthao - overview dict me pehle se hi saari 2-column table rows
+    # (key -> {text, link}) bhari hui hain, isme "Apply Online" jaisi
+    # row bhi shaamil hai agar table format me di gayi ho.
+    apply_field = get_field("apply online", "apply here", "apply link", "apply now",
+                             "online registration", "registration")
+    if is_usable_link(apply_field.get("link")):
+        apply_link = apply_field.get("link")
+
+    pdf_field = get_field("notification pdf", "download notification", "notification link",
+                           "advertisement", "detailed notification")
+    if is_usable_link(pdf_field.get("link")):
+        pdf_link = pdf_field.get("link")
+
+    # STEP 2 (fallback): li/p tags me keyword-match se dhoondo, sirf
+    # tabhi jab STEP 1 se kuch na mila ho
     APPLY_KEYWORDS = [
         "apply online", "apply here", "apply link", "apply now",
         "online registration", "registration link", "click here to apply",
@@ -152,24 +185,24 @@ def parse_job_page(url, source_state):
         "notification pdf", "official notification", "download notification",
         "notification link", "advertisement pdf", "detailed notification",
     ]
-    for li_or_p in soup.find_all(["li", "p"]):
-        text = li_or_p.get_text(" ", strip=True).lower()
-        a = li_or_p.find("a")
-        if not a or not a.get("href"):
-            continue
-        # har href ko yahin absolute bana do (relative path wala bug fix)
-        href = urljoin(url, a.get("href"))
-        if not apply_link and any(k in text for k in APPLY_KEYWORDS):
-            apply_link = href
-        elif not pdf_link and (any(k in text for k in PDF_KEYWORDS) or href.lower().endswith(".pdf")):
-            pdf_link = href
-        elif "official website" in text and not official_website:
-            official_website = href
+    if not apply_link or not pdf_link:
+        for li_or_p in soup.find_all(["li", "p"]):
+            text = li_or_p.get_text(" ", strip=True).lower()
+            a = li_or_p.find("a")
+            if not a or not is_usable_link(a.get("href")):
+                continue
+            href = urljoin(url, a.get("href"))
+            if not apply_link and any(k in text for k in APPLY_KEYWORDS):
+                apply_link = href
+            elif not pdf_link and (any(k in text for k in PDF_KEYWORDS) or href.lower().endswith(".pdf")):
+                pdf_link = href
+            elif not official_website and "official website" in text:
+                official_website = href
 
     # Fallback: kisi bhi .pdf link ko PDF maan lo agar upar nahi mila
     if not pdf_link:
         pdf_a = soup.find("a", href=re.compile(r"\.pdf($|\?)", re.I))
-        if pdf_a and pdf_a.get("href"):
+        if pdf_a and is_usable_link(pdf_a.get("href")):
             pdf_link = urljoin(url, pdf_a.get("href"))
 
     # Fallback: apply_link kabhi na mile to official_website hi de do,
