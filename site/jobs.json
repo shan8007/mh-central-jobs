@@ -1,7 +1,39 @@
 {
-  "last_synced": "2026-08-16T14:44:48.209692+00:00",
-  "total_jobs": 232,
+  "last_synced": "2026-08-17T03:27:01.517729+00:00",
+  "total_jobs": 234,
   "jobs": [
+    {
+      "id": "8ed0ea05bdd8",
+      "job_title": "VAO Recruitment 2026 Karnataka Last Date Extended - KEA Notification for 572 Village Accountant Posts",
+      "department": "Karnataka Examinations Authority (KEA)",
+      "qualification": "",
+      "category": "General",
+      "last_date": "30 July 2026",
+      "post": "Village Accountant / Grama Aadalitha Adhikari (Village Administrative Officer)",
+      "location": "Maharashtra",
+      "official_website": "https://cetonline.karnataka.gov.in/",
+      "apply_link": "https://cetonline.karnataka.gov.in/login",
+      "pdf_link": "https://cetonline.karnataka.gov.in/keawebentry456/vaorpc2026/vao_rpc_notification_10072026kannada.pdf",
+      "source_url": "https://www.freejobalert.com/articles/kea-vao-recruitment-2026-apply-online-for-572-posts-3057860",
+      "state_tag": "Maharashtra",
+      "scraped_at": "2026-08-17T03:27:00.419130+00:00"
+    },
+    {
+      "id": "abc0e9718c28",
+      "job_title": "KEA Surveyor Recruitment 2026 Last Date Extended - Apply Online for 750 Bhoomapaka Posts in Karnataka Land Records Department",
+      "department": "Karnataka Examination Authority (KEA), Bengaluru",
+      "qualification": "",
+      "category": "General",
+      "last_date": "07-08-2026",
+      "post": "Surveyor (Bhoomapaka)",
+      "location": "Karnataka (including Kalyana-Karnataka region)",
+      "official_website": "https://cetonline.karnataka.gov.in/",
+      "apply_link": "https://cetonline.karnataka.gov.in/kea/indexnew",
+      "pdf_link": "https://cetonline.karnataka.gov.in/keawebentry456/landkk2026/kk_ao_aao_05082026kannada.pdf",
+      "source_url": "https://www.freejobalert.com/articles/kea-land-surveyor-recruitment-2026-apply-online-for-750-posts-3057813",
+      "state_tag": "Maharashtra",
+      "scraped_at": "2026-08-17T03:26:59.298403+00:00"
+    },
     {
       "id": "372cbaff608d",
       "job_title": "MPYPIL Recruitment 2026 - Apply Online for 399 Junior, Senior & Higher Management Posts",
