@@ -1,7 +1,39 @@
 {
-  "last_synced": "2026-08-20T15:01:36.211496+00:00",
-  "total_jobs": 308,
+  "last_synced": "2026-08-21T03:29:20.990347+00:00",
+  "total_jobs": 310,
   "jobs": [
+    {
+      "id": "923c2597a8af",
+      "job_title": "HPPSC HP Police Constable (Male & Female) Recruitment 2026 Last date Extended - 734 Vacancies",
+      "department": "Himachal Pradesh Public Service Commission (HPPSC)",
+      "qualification": "",
+      "category": "Police/Defence",
+      "last_date": "21.08.2026, 11:59 PM (Extended)",
+      "post": "Police Constable (Male), Police Constable (Female)",
+      "location": "Maharashtra",
+      "official_website": "https://hppsc.hp.gov.in",
+      "apply_link": "https://hppsconline.hp.gov.in/HPPSC/ApplicantRegistration/Home/Login",
+      "pdf_link": "https://hppsc.hp.gov.in/CommonControls/ViewCMSFile?qs=KI3gZ53zz1wSGo29lXLTBfw1DHezN8KfEg%2BrikZhi%2FLLqiZME0%2BQReThfPJPy%2BjgAawUitL1IGdz9GRrjjhvkoFn1QN%2F9fo3ZFqz1O1V3gk%3D",
+      "source_url": "https://www.freejobalert.com/articles/hppsc-police-constable-recruitment-2026-apply-online-for-734-posts-3057549",
+      "state_tag": "Maharashtra",
+      "scraped_at": "2026-08-21T03:29:19.839602+00:00"
+    },
+    {
+      "id": "f59402293a72",
+      "job_title": "SHS Bihar Specialist Doctor Recruitment 2026 - Apply Online for 450 Paediatrician, Gynaecologist and More Posts",
+      "department": "State Health Society, Bihar (SHSB)",
+      "qualification": "01.08.2026",
+      "category": "Medical/Health",
+      "last_date": "21.08.2026 (6:00 PM)",
+      "post": "Specialist Doctor (6 categories)",
+      "location": "Maharashtra",
+      "official_website": "https://shs.bihar.gov.in",
+      "apply_link": "https://shs.bihar.gov.in/Advertisement",
+      "pdf_link": "https://shs.bihar.gov.in/shs/advertisement/1785991666.pdf",
+      "source_url": "https://www.freejobalert.com/articles/shs-bihar-specialist-doctor-recruitment-2026-apply-online-for-450-posts-3061861",
+      "state_tag": "Maharashtra",
+      "scraped_at": "2026-08-21T03:29:18.463114+00:00"
+    },
     {
       "id": "13ce7d09a6e6",
       "job_title": "BEL Deputy Engineer Recruitment 2026 - Apply Online",
