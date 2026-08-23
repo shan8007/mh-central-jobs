@@ -1,7 +1,23 @@
 {
-  "last_synced": "2026-08-22T14:43:51.271399+00:00",
-  "total_jobs": 335,
+  "last_synced": "2026-08-23T03:28:47.525223+00:00",
+  "total_jobs": 336,
   "jobs": [
+    {
+      "id": "b37049bba8ec",
+      "job_title": "SAIL RSP Apprentice Recruitment 2026 Notification Out - Apply Online for 1110 Trade, Diploma, Graduate Apprentices Posts",
+      "department": "Rourkela Steel Plant (RSP), SAIL - Learning & Development Department",
+      "qualification": "",
+      "category": "General",
+      "last_date": "26 August 2026",
+      "post": "Trade Apprentice (ITI), Diploma Apprentice, Graduate/Degree Apprentice",
+      "location": "Maharashtra",
+      "official_website": "https://sail.co.in/",
+      "apply_link": "https://sail.co.in/",
+      "pdf_link": "https://aima-web-images.s3.ap-south-1.amazonaws.com/sailcareers.com/Downloads/RSP_News%20&%20Jobs_17072026_140526.pdf",
+      "source_url": "https://www.freejobalert.com/articles/sail-rsp-apprentice-recruitment-2026-apply-online-for-1110-posts-3059166",
+      "state_tag": "Maharashtra",
+      "scraped_at": "2026-08-23T03:28:46.341230+00:00"
+    },
     {
       "id": "e6851b1f403c",
       "job_title": "VNIT Project Assistant Recruitment 2026 - Walkin",
