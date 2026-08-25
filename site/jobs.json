@@ -1,7 +1,23 @@
 {
-  "last_synced": "2026-08-24T15:07:24.079343+00:00",
-  "total_jobs": 355,
+  "last_synced": "2026-08-25T03:25:45.199726+00:00",
+  "total_jobs": 356,
   "jobs": [
+    {
+      "id": "75a7d81c9c35",
+      "job_title": "TNSTC Apprentice Recruitment 2026: Apply Online for 1518 Graduate, Diploma and Non-Engineering Apprentice Posts",
+      "department": "TNSTC Villupuram, TNSTC Kumbakonam, TNSTC Salem, TNSTC Madurai, TNSTC Tirunelveli, MTC Chennai, SETC Tamil Nadu Ltd",
+      "qualification": "",
+      "category": "Engineering",
+      "last_date": "28.08.2026",
+      "post": "Graduate Apprentice (Engineering), Technician (Diploma) Apprentice, Graduate Apprentice (Non-Engineering)",
+      "location": "Maharashtra",
+      "official_website": "https://www.tnstc.in/",
+      "apply_link": "https://nats.education.gov.in/student_type.php",
+      "pdf_link": "https://nats.education.gov.in/uploads/events/sr/TNSTC%20MTC%20SETC%20Notification%202026%20-%2027%20%207-Regions.pdf",
+      "source_url": "https://www.freejobalert.com/articles/tnstc-apprentice-recruitment-2026-apply-online-for-1518-graduate-and-diploma-apprentice-posts-3060678",
+      "state_tag": "Maharashtra",
+      "scraped_at": "2026-08-25T03:25:43.795883+00:00"
+    },
     {
       "id": "09d0423455ef",
       "job_title": "Federal Bank Sales Officer Recruitment 2026 Notification Out - Apply Online",
