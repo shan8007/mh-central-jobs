@@ -1,7 +1,39 @@
 {
-  "last_synced": "2026-08-27T12:58:19.445732+00:00",
-  "total_jobs": 423,
+  "last_synced": "2026-08-27T19:13:21.714417+00:00",
+  "total_jobs": 425,
   "jobs": [
+    {
+      "id": "3bceaebf5613",
+      "job_title": "Punjab PTI Recruitment 2026 Notification Out - Apply Online for 2000 Primary Cadre Posts",
+      "department": "Education Recruitment Directorate, Punjab (ERD Punjab)",
+      "qualification": "",
+      "category": "General",
+      "last_date": "31-08-2026",
+      "post": "Physical Training Instructor (PTI), Primary Cadre",
+      "location": "Maharashtra",
+      "official_website": "https://www.erd.punjab.gov.in/",
+      "apply_link": "https://www.erd.punjab.gov.in/",
+      "pdf_link": "",
+      "source_url": "https://www.freejobalert.com/articles/punjab-pti-recruitment-2026-apply-online-for-2000-primary-cadre-posts-3061033",
+      "state_tag": "Maharashtra",
+      "scraped_at": "2026-08-27T19:13:20.485094+00:00"
+    },
+    {
+      "id": "3baee61943be",
+      "job_title": "Hassan District Court Peon Recruitment 2026 - Apply Online for 48 Posts",
+      "department": "Principal District and Sessions Court, Hassan, Karnataka",
+      "qualification": "Closing date of application",
+      "category": "Court/Legal",
+      "last_date": "17 September 2026, 11:59 PM",
+      "post": "Peon / Sevaka (Attender), Class-IV/Group-D",
+      "location": "Maharashtra",
+      "official_website": "",
+      "apply_link": "",
+      "pdf_link": "https://cdnbbsr.s3waas.gov.in/s3ec01bbb001ba009ed11717eaec9305b2/uploads/2026/08/2026081979.pdf",
+      "source_url": "https://www.freejobalert.com/articles/hassan-district-court-peon-recruitment-2026-apply-online-for-48-posts-3065076",
+      "state_tag": "Maharashtra",
+      "scraped_at": "2026-08-27T19:13:19.278644+00:00"
+    },
     {
       "id": "2b21f493f037",
       "job_title": "NSC Delhi Science Communicator Recruitment 2026 - Walkin",
