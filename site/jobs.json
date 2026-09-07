@@ -1,7 +1,39 @@
 {
-  "last_synced": "2026-09-07T14:23:50.789625+00:00",
-  "total_jobs": 615,
+  "last_synced": "2026-09-07T18:47:05.375054+00:00",
+  "total_jobs": 617,
   "jobs": [
+    {
+      "id": "d615f30cd14f",
+      "job_title": "TSLPRB Recruitment 2026 - Apply Online for 325 Police Constable, ASI, Station Fire Officer & More Posts",
+      "department": "Telangana State Level Police Recruitment Board (TSLPRB)",
+      "qualification": "",
+      "category": "Police/Defence",
+      "last_date": "09 September 2026",
+      "post": "SCT SI (Civil), SCT RSI (AR/SAR CPL/TGSP), SCT SI (SPF), Station Fire Officer, Deputy Jailor (Men/Women), SCT PC (Mechanic), SCT PC (Driver), SCT ASI (Fingerprint Bureau)",
+      "location": "Telangana",
+      "official_website": "https://www.tgprb.in/",
+      "apply_link": "https://www.tgprb.in/",
+      "pdf_link": "https://www.tgprb.in/SI_PC_2026/SI%20(Civil%20et%20al)%202026%20Notification%20dated%2029-07-2026.pdf",
+      "source_url": "https://www.freejobalert.com/articles/telangana-police-tslprb-recruitment-2026-apply-online-for-7437-police-constable-warder-si-and-more-posts-3056807",
+      "state_tag": "Maharashtra",
+      "scraped_at": "2026-09-07T18:47:04.267325+00:00"
+    },
+    {
+      "id": "3c98cf3b9b71",
+      "job_title": "HP High Court Recruitment 2026 Notification Out - Apply Online for 388 Clerk, Peon, Stenographer and More Posts",
+      "department": "High Court of Himachal Pradesh, Shimla",
+      "qualification": "",
+      "category": "Court/Legal",
+      "last_date": "10 September 2026 (11:59 PM)",
+      "post": "Court Manager, Clerk, Stenographer Grade-III, Driver, Process Server, Peon/Orderly/Chowkidar/Safai Karamchari/Chowkidar-cum-Safai Karamchari",
+      "location": "District Judiciary establishments across Himachal Pradesh",
+      "official_website": "https://highcourt.hp.gov.in/",
+      "apply_link": "https://www.hphcrecruitment.in/login",
+      "pdf_link": "https://highcourt.hp.gov.in/uploads/recruitment/items/item_1786094343_5963.pdf",
+      "source_url": "https://www.freejobalert.com/articles/hp-high-court-recruitment-2026-notification-out-apply-online-for-388-clerk-peon-stenographer-and-more-posts-3062005",
+      "state_tag": "Maharashtra",
+      "scraped_at": "2026-09-07T18:47:03.143239+00:00"
+    },
     {
       "id": "4831f75e4b99",
       "job_title": "NII Project Scientist Recruitment 2026 - Apply Online",
