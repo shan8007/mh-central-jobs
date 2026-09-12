@@ -1,7 +1,39 @@
 {
-  "last_synced": "2026-09-11T17:47:53.828764+00:00",
-  "total_jobs": 708,
+  "last_synced": "2026-09-12T07:16:29.567228+00:00",
+  "total_jobs": 710,
   "jobs": [
+    {
+      "id": "2b7bb3e8eda4",
+      "job_title": "MPESB Naib Tehsildar Recruitment 2026 Notification Out - Apply Online for 73 Posts",
+      "department": "Madhya Pradesh Employees Selection Board (MPESB), Bhopal",
+      "qualification": "",
+      "category": "General",
+      "last_date": "1 October 2026",
+      "post": "Naib Tehsildar",
+      "location": "Maharashtra",
+      "official_website": "https://esb.mp.gov.in/",
+      "apply_link": "https://esb.mp.gov.in/",
+      "pdf_link": "https://esb.mp.gov.in/Rulebooks/RB_2026/Nayab_Tehsildar_2026_Rule_Book_11092026.pdf",
+      "source_url": "https://www.freejobalert.com/articles/mpesb-naib-tehsildar-recruitment-2026-apply-online-for-73-posts-3067527",
+      "state_tag": "Maharashtra",
+      "scraped_at": "2026-09-12T07:16:28.148882+00:00"
+    },
+    {
+      "id": "23dd04667e08",
+      "job_title": "KEA Kalyana Karnataka Group C Recruitment 2026 -  Apply Online for 210 Electrician, Water Supply Operator and More Posts",
+      "department": "Karnataka Examinations Authority (KEA), on behalf of the Directorate of Municipal Administration, Government of Karnataka",
+      "qualification": "",
+      "category": "General",
+      "last_date": "30.09.2026",
+      "post": "Water Supply Operator, Electrician Grade-1, Assistant Water Supply Operator, Electrician Grade-2",
+      "location": "Urban local bodies under the Kalyana-Karnataka region",
+      "official_website": "https://cetonline.karnataka.gov.in/kea/",
+      "apply_link": "https://cetonline.karnataka.gov.in/",
+      "pdf_link": "https://cetonline.karnataka.gov.in/keawebentry456/muadkk2026/Notificationkannada.pdf",
+      "source_url": "https://www.freejobalert.com/articles/kea-kalyana-karnataka-recruitment-2026-apply-online-for-210-electrician-water-supply-operator-and-more-posts-3067512",
+      "state_tag": "Maharashtra",
+      "scraped_at": "2026-09-12T07:16:26.694791+00:00"
+    },
     {
       "id": "3ef5fc26b566",
       "job_title": "IIM Nagpur Assistant Programme Administrator Recruitment 2026 - Apply Online",
