@@ -1,7 +1,39 @@
 {
-  "last_synced": "2026-10-14T13:57:46.653566+00:00",
-  "total_jobs": 1302,
+  "last_synced": "2026-10-14T18:45:04.236488+00:00",
+  "total_jobs": 1304,
   "jobs": [
+    {
+      "id": "c23bd13a71a6",
+      "job_title": "NFDC Head - Programming, Film Bazaar Recruitment 2026 – Apply Online",
+      "department": "National Film Development Corporation Ltd. (NFDC)",
+      "qualification": "",
+      "category": "General",
+      "last_date": "24 October 2026 till 6:00 pm",
+      "post": "Head - Programming, Film Bazaar",
+      "location": "Mumbai (initial place of posting, transferable to any part of India)",
+      "official_website": "",
+      "apply_link": "",
+      "pdf_link": "https://nfdcindia.com/nfdcapi/apifile/1791982722243_5191068.pdf",
+      "source_url": "https://www.freejobalert.com/articles/nfdc-head-programming-film-bazaar-recruitment-2026-3073628",
+      "state_tag": "Maharashtra",
+      "scraped_at": "2026-10-14T18:45:03.045078+00:00"
+    },
+    {
+      "id": "31e843702404",
+      "job_title": "DH&FWS Purba Bardhaman Recruitment 2026 – Apply Online for 27 Block Data Manager, Staff Nurse Posts",
+      "department": "Office of the Chief Medical Officer of Health, District Health & Family Welfare Samity, Purba Bardhaman",
+      "qualification": "Graduation with Computer Diploma for Data Manager; GNM or B.Sc. Nursing for Staff Nurse",
+      "category": "Medical/Health",
+      "last_date": "13 November 2026",
+      "post": "Block Data Manager and Staff Nurse",
+      "location": "Purba Bardhaman, West Bengal",
+      "official_website": "",
+      "apply_link": "",
+      "pdf_link": "https://cdn.s3waas.gov.in/s3cf67355a3333e6e143439161adc2d82e/uploads/2026/10/17919808273924.pdf",
+      "source_url": "https://www.freejobalert.com/articles/dh-fws-purba-bardhaman-recruitment-2026-staff-nurse-block-data-manager-3073631",
+      "state_tag": "Maharashtra",
+      "scraped_at": "2026-10-14T18:45:01.891290+00:00"
+    },
     {
       "id": "2ec925bda636",
       "job_title": "Cochin Shipyard Apprentice Recruitment 2026 – Apply Online for Technician, Graduate Apprentices Posts",
