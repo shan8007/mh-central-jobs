@@ -1,7 +1,23 @@
 {
-  "last_synced": "2026-10-18T07:20:46.568719+00:00",
-  "total_jobs": 1382,
+  "last_synced": "2026-10-18T12:45:19.909764+00:00",
+  "total_jobs": 1383,
   "jobs": [
+    {
+      "id": "56559453f1b2",
+      "job_title": "SBI Recruitment 2026 – Apply Online for 6 GM & Chief AI Officer, DGM and More Posts",
+      "department": "State Bank of India (SBI)",
+      "qualification": "30.09.2026",
+      "category": "Banking",
+      "last_date": "09.11.2026",
+      "post": "GM & Chief AI officer, DGM (Risk and Operational Analytics), DGM (AI Governance and Compliance), DGM (Data Engineering, Model Application Dev and AI Ops), AI Solution Architect, Enterprise AI Architect",
+      "location": "Mumbai or anywhere in India, in case of any administrative requirement",
+      "official_website": "",
+      "apply_link": "",
+      "pdf_link": "",
+      "source_url": "https://www.freejobalert.com/articles/sbi-recruitment-2026-gm-chief-ai-officer-dgm-3074384",
+      "state_tag": "Central",
+      "scraped_at": "2026-10-18T12:45:18.909424+00:00"
+    },
     {
       "id": "e647dea277fc",
       "job_title": "DGQA Technician Recruitment 2026 – Apply Offline for 32 Posts",
