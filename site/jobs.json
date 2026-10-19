@@ -1,7 +1,23 @@
 {
-  "last_synced": "2026-10-18T17:26:45.530582+00:00",
-  "total_jobs": 1383,
+  "last_synced": "2026-10-19T07:59:19.352402+00:00",
+  "total_jobs": 1384,
   "jobs": [
+    {
+      "id": "7931def90623",
+      "job_title": "EIL Recruitment 2026 – Apply Online for 109 Associate Engineer, Associate Officer Posts",
+      "department": "Engineers India Limited (EIL), Across India",
+      "qualification": "B.Tech/B.E., B.Sc, Diploma, Graduate, depending on the post",
+      "category": "Engineering",
+      "last_date": "2 November 2026",
+      "post": "Associate Engineer Grade II, Associate Engineer Gr. III, Associate Engineer Gr. IV and 1 more",
+      "location": "Central",
+      "official_website": "http://www.engineersindia.com",
+      "apply_link": "http://www.engineersindia.com",
+      "pdf_link": "https://recruitment.eil.co.in/hrdnew/others/78.pdf",
+      "source_url": "https://www.freejobalert.com/articles/eil-recruitment-2026-associate-engineer-and-associate-officer-3074393",
+      "state_tag": "Central",
+      "scraped_at": "2026-10-19T07:59:18.352064+00:00"
+    },
     {
       "id": "56559453f1b2",
       "job_title": "SBI Recruitment 2026 – Apply Online for 6 GM & Chief AI Officer, DGM and More Posts",
