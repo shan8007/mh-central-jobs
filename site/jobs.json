@@ -1,7 +1,39 @@
 {
-  "last_synced": "2026-10-28T15:21:40.840804+00:00",
-  "total_jobs": 1608,
+  "last_synced": "2026-10-28T19:41:06.504020+00:00",
+  "total_jobs": 1610,
   "jobs": [
+    {
+      "id": "199f3a91ea84",
+      "job_title": "PM SHRI KV AFS Chandinagar Special Educator Recruitment 2026 – Walkin",
+      "department": "PM Shri Kendriya Vidyalaya Air Force Station, Chandinagar",
+      "qualification": "",
+      "category": "Police/Defence",
+      "last_date": "",
+      "post": "Special Educator",
+      "location": "Central",
+      "official_website": "",
+      "apply_link": "",
+      "pdf_link": "https://cdnbbsr.s3waas.gov.in/s3kv051afd8254013a7c563846bfcfff26/uploads/2026/10/2026102898.pdf",
+      "source_url": "https://www.freejobalert.com/articles/pm-shri-kv-afs-chandinagar-special-educator-recruitment-2026-3076616",
+      "state_tag": "Central",
+      "scraped_at": "2026-10-28T19:41:05.503672+00:00"
+    },
+    {
+      "id": "460040dccab7",
+      "job_title": "RRC North Central Railway GDCE Recruitment 2026 Notification Out - Apply Online for 656 JE, ALP, Clerk, Technicians and More Posts",
+      "department": "Railway Recruitment Cell (RRC), North Central Railway (NCR), Prayagraj",
+      "qualification": "",
+      "category": "Railway",
+      "last_date": "30.10.2026 at 23:59 hrs",
+      "post": "Assistant Loco Pilot, Technician Gr-I and Gr-III, Junior Engineer, Commercial cum Ticket Clerk, Junior Clerk cum Typist",
+      "location": "North Central Railway (selected employees are liable to be posted anywhere in NCR; specific stations are not listed in the notification)",
+      "official_website": "",
+      "apply_link": "",
+      "pdf_link": "https://rrcpryj.org/wp-content/uploads/2026/09/GDCE-Notification-No.-RRC-NCR-GDCE-01_2026.pdf",
+      "source_url": "https://www.freejobalert.com/articles/rrc-north-central-railway-gdce-recruitment-2026-apply-online-for-656-je-alp-clerk-technicians-and-more-posts-3070245",
+      "state_tag": "Maharashtra",
+      "scraped_at": "2026-10-28T19:41:04.265020+00:00"
+    },
     {
       "id": "14d77fc0cec3",
       "job_title": "NeGD MLOps Engineer Recruitment 2026 – Apply Online",
