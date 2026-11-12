@@ -1,7 +1,39 @@
 {
-  "last_synced": "2026-11-12T17:00:04.413002+00:00",
-  "total_jobs": 2002,
+  "last_synced": "2026-11-12T21:30:19.099087+00:00",
+  "total_jobs": 2004,
   "jobs": [
+    {
+      "id": "c60f8db3eb8d",
+      "job_title": "AIIMS Nagpur Project Technical Support III Recruitment 2026 – Apply Online",
+      "department": "All India Institute of Medical Sciences, Nagpur",
+      "qualification": "",
+      "category": "Engineering",
+      "last_date": "20 November 2026",
+      "post": "Project Technical Support-III",
+      "location": "AIIMS Nagpur, MIHAN, Nagpur",
+      "official_website": "https://www.aiimsnagpur.edu.in",
+      "apply_link": "https://www.aiimsnagpur.edu.in",
+      "pdf_link": "https://aiimsnagpur.edu.in/upload/recruitment/Advertisement_and_Application_Form_PTS_III_NIPT_Pathology.pdf",
+      "source_url": "https://www.freejobalert.com/articles/aiims-nagpur-project-technical-support-iii-recruitment-2026-3080729",
+      "state_tag": "Maharashtra",
+      "scraped_at": "2026-11-12T21:30:17.941473+00:00"
+    },
+    {
+      "id": "514df42f5072",
+      "job_title": "AIIMS Nagpur Ethics Committee Office Assistant (Institutional Ethics Committee) Recruitment 2026 – Apply Online",
+      "department": "All India Institute of Medical Sciences, Nagpur (Institutional Ethics Committee)",
+      "qualification": "B. Pharm/ M.Sc./ B.Sc.; Postgraduate diploma in Clinical Research",
+      "category": "Medical/Health",
+      "last_date": "20-11-2026 (application to be sent on or before this date)",
+      "post": "Ethics Committee Office Assistant",
+      "location": "AIIMS, Nagpur",
+      "official_website": "",
+      "apply_link": "",
+      "pdf_link": "https://aiimsnagpur.edu.in/upload/recruitment/ethics_committee_advertisement_04112026.pdf",
+      "source_url": "https://www.freejobalert.com/articles/aiims-nagpur-ethics-committee-office-assistant-recruitment-2026-3080731",
+      "state_tag": "Maharashtra",
+      "scraped_at": "2026-11-12T21:30:16.832983+00:00"
+    },
     {
       "id": "d41213fc6f0d",
       "job_title": "Embassy of India, Berlin Local Clerk Recruitment 2026 – Apply Online",
