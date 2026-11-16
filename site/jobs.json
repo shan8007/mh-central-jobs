@@ -1,7 +1,23 @@
 {
-  "last_synced": "2026-11-16T18:48:51.751530+00:00",
-  "total_jobs": 2079,
+  "last_synced": "2026-11-16T23:26:37.637577+00:00",
+  "total_jobs": 2080,
   "jobs": [
+    {
+      "id": "3a5e50ee7417",
+      "job_title": "Embassy of India Marketing Executive Recruitment 2026 – Apply Online",
+      "department": "Embassy of India, Amman",
+      "qualification": "Graduate",
+      "category": "General",
+      "last_date": "21 November 2026 (latest by)",
+      "post": "Pay",
+      "location": "Amman",
+      "official_website": "",
+      "apply_link": "",
+      "pdf_link": "https://indembassy-amman.gov.in/pdf/Vacancy_Announcement_%20Ad-Hoc_Marketing_Executive_16112026.pdf",
+      "source_url": "https://www.freejobalert.com/articles/embassy-of-india-marketing-executive-recruitment-2026-3081643",
+      "state_tag": "Central",
+      "scraped_at": "2026-11-16T23:26:36.637337+00:00"
+    },
     {
       "id": "f90564364929",
       "job_title": "JNU Vice-Chancellor Recruitment 2026 – Apply Online",
