@@ -1,7 +1,23 @@
 {
-  "last_synced": "2026-11-19T17:34:06.625098+00:00",
-  "total_jobs": 2211,
+  "last_synced": "2026-11-19T22:19:18.841187+00:00",
+  "total_jobs": 2212,
   "jobs": [
+    {
+      "id": "7a4d4fa55a76",
+      "job_title": "TISS Recruitment 2026 – Apply Online for 10 Research Interns without Honorarium, Research Officer and More Posts",
+      "department": "Tata Institute of Social Sciences (TISS), Tuljapur Off-Campus",
+      "qualification": "",
+      "category": "General",
+      "last_date": "29 November 2026",
+      "post": "Research Officer, Research Associate, Research Interns, Research Interns without Honorarium, Administrative cum Account Assistant",
+      "location": "Tuljapur Off-Campus; field visits in Dharashiv District of Maharashtra",
+      "official_website": "https://www.tiss.ac.in",
+      "apply_link": "https://www.tiss.ac.in",
+      "pdf_link": "https://tiss.ac.in/uploads/files/Final_Project_Advertisement_DSP-Dharashiv_revised.pdf",
+      "source_url": "https://www.freejobalert.com/articles/tiss-recruitment-2026-research-interns-without-honorarium-3082840",
+      "state_tag": "Maharashtra",
+      "scraped_at": "2026-11-19T22:19:17.711917+00:00"
+    },
     {
       "id": "d4d32a1740c9",
       "job_title": "RITES Recruitment 2026 – Apply Online for 8 Technical Assistant, Technician Posts",
