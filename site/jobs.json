@@ -1,7 +1,39 @@
 {
-  "last_synced": "2026-11-21T16:20:06.121782+00:00",
-  "total_jobs": 2294,
+  "last_synced": "2026-11-21T20:36:30.706984+00:00",
+  "total_jobs": 2296,
   "jobs": [
+    {
+      "id": "526b2f18a6c4",
+      "job_title": "IIBF Head – PDC Recruitment 2026 – Apply Online",
+      "department": "Indian Institute of Banking & Finance (IIBF)",
+      "qualification": "",
+      "category": "Banking",
+      "last_date": "02.12.2026",
+      "post": "Head – PDC (Professional Development Centre, Kolkata)",
+      "location": "IIBF Professional Development Centre, Kolkata, West Bengal",
+      "official_website": "",
+      "apply_link": "",
+      "pdf_link": "",
+      "source_url": "https://www.freejobalert.com/articles/iibf-head-pdc-recruitment-2026-3083615",
+      "state_tag": "Maharashtra",
+      "scraped_at": "2026-11-21T20:36:29.604686+00:00"
+    },
+    {
+      "id": "e996a4710c93",
+      "job_title": "IIBF Head - PDC Recruitment 2026 – Apply Online",
+      "department": "Indian Institute of Banking & Finance",
+      "qualification": "",
+      "category": "Banking",
+      "last_date": "05.12.2026",
+      "post": "Head - PDC (Professional Development Centre, GIFT City, Gandhinagar)",
+      "location": "IIBF Professional Development Centre, Gandhinagar, Gujarat",
+      "official_website": "",
+      "apply_link": "",
+      "pdf_link": "",
+      "source_url": "https://www.freejobalert.com/articles/iibf-head-pdc-recruitment-2026-3083613",
+      "state_tag": "Maharashtra",
+      "scraped_at": "2026-11-21T20:36:28.502005+00:00"
+    },
     {
       "id": "76fc62c9b95f",
       "job_title": "NCPUL Principal Publication Officer Recruitment 2026 – Apply Offline",
