@@ -1,7 +1,23 @@
 {
-  "last_synced": "2026-11-24T19:39:23.678017+00:00",
-  "total_jobs": 2379,
+  "last_synced": "2026-11-24T23:33:22.063255+00:00",
+  "total_jobs": 2380,
   "jobs": [
+    {
+      "id": "5c6cded70e41",
+      "job_title": "MOIL Advisor Recruitment 2026 – Apply Offline",
+      "department": "MOIL Limited (formerly Manganese Ore India Limited)",
+      "qualification": "Retired Executives/Officers who served at E-08/E-09 grades or equivalent, with requisite expertise in their domain",
+      "category": "General",
+      "last_date": "14/12/2026",
+      "post": "Advisor (Strategic Planning & Commercial); Advisor (Management Services)",
+      "location": "Nagpur",
+      "official_website": "https://www.moil.nic.in",
+      "apply_link": "https://www.moil.nic.in",
+      "pdf_link": "https://backend.moil.nic.in/getFiles/public/document/M6b057b7b1-Advisors.pdf",
+      "source_url": "https://www.freejobalert.com/articles/moil-recruitment-2026-advisor-3084264",
+      "state_tag": "Maharashtra",
+      "scraped_at": "2026-11-24T23:33:20.975535+00:00"
+    },
     {
       "id": "4e857363aace",
       "job_title": "NHPC Trainee Engineer Recruitment 2026 - Apply Online for 205 Civil, Electrical and Mechanical Posts",
